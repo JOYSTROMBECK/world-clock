@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.32/moment-timezone-with-data.min.js"></script>
     <title>World Clock - Joy Strombeck</title>
 </head>
 <body>
@@ -14,22 +14,29 @@
         <select id="city">
             <option value="">Select a city..</option>
             <option value="current">My current location</option>
-            <option value="Europe/London">London</option>
             <option value="America/New_York">New York</option>
-            <option value="Pacific/Auckland">Auckland</option>
+            <option value="America/Miami">Miami</option>
+            <option value="America/Sao_Paulo">São Paulo</option>
         </select>
 
         <div id="cities">
-            <div class="city" id="los-angeles">
+            <div class="city" id="new-york">
                 <div>
-                    <h2>Los Angeles</h2>
+                    <h2>New York</h2>
                     <div class="date"></div>
                 </div>
                 <div class="time"></div>
             </div>
-            <div class="city" id="paris">
+            <div class="city" id="miami">
                 <div>
-                    <h2>Paris</h2>
+                    <h2>Miami</h2>
+                    <div class="date"></div>
+                </div>
+                <div class="time"></div>
+            </div>
+            <div class="city" id="sao-paulo">
+                <div>
+                    <h2>São Paulo</h2>
                     <div class="date"></div>
                 </div>
                 <div class="time"></div>
@@ -51,4 +58,3 @@
     <script src="javascript/index.js"></script>
 </body>
 </html>
-
