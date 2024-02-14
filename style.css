@@ -1,65 +1,97 @@
 body {
-    background-color: #f9f7fe;
-    font-family: sans-serif;
-  }
-  
-  h1 {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 36px;
-  }
-  
-  h2 {
-    margin: 0 0 5px;
-    font-size: 28px;
-  }
-  
-  select {
-    display: block;
-    width: 100%;
-    font-size: 18px;
-    border-radius: 4px;
-    padding: 10px;
-  }
-  
-  .container {
-    max-width: 300px;
-    margin: 60px auto;
-    background: white;
-    padding: 30px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 10px;
-  }
-  
-  .city {
+    background: url('https://img.freepik.com/free-vector/dark-background-with-neon-lines_23-2148931032.jpg?w=2000&t=st=1707881132~exp=1707881732~hmac=4111ebde9aeb0d6d8d13f7c6fb16f2f482b0143df03bcf609f491bcab24162e8;') fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
-    margin: 10px 0;
-    justify-content: space-between;
-    padding: 30px 0;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
-  }
-  
-  .city:last-child {
-    border: none;
-  }
-  
-  .date {
-    opacity: 0.7;
-  }
-  
-  .time {
-    font-size: 48px;
-    font-weight: bold;
-  }
-  
-  .time small {
-    font-size: 24px;
-    vertical-align: middle;
-    line-height: 40px;
-  }
-  
-  footer {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     text-align: center;
+    color: red;
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+h1 {
+    color: black;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+select {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.city {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.city:hover {
+    transform: scale(1.05);
+}
+
+.date {
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+.time {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+}
+
+.time small {
     font-size: 18px;
-    color: rgba(0, 0, 0, 0.8);
-  }
+    vertical-align: middle;
+    line-height: 36px;
+}
+
+#back-link {
+    margin-top: 20px;
+}
+
+#back-link a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#back-link a:hover {
+    text-decoration: underline;
+    color: #2c3e50;
+}
+  
